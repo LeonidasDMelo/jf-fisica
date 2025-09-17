@@ -4,12 +4,10 @@
   <meta charset="UTF-8">
   <title>Física Básica</title>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-
   <style>
     body {
+        font-size: 1.4em;
       font-family: 'Roboto', sans-serif;
       margin: 0;
       padding: 0;
@@ -29,25 +27,7 @@
       font-size: 2.5em;
     }
 
-    nav {
-      background: #3949ab;
-      display: flex;
-      justify-content: center;
-      flex-wrap: wrap;
-    }
-
-    nav a {
-      color: white;
-      text-decoration: none;
-      padding: 15px 20px;
-      display: block;
-      font-weight: bold;
-      transition: background 0.3s;
-    }
-
-    nav a:hover {
-      background: #5c6bc0;
-    }
+    
 
     .container {
       max-width: 900px;
@@ -67,8 +47,37 @@
       margin-bottom: 10px;
     }
 
-    section p {
+    section p, section ul, section ol {
       line-height: 1.6;
+    }
+
+    img {
+        margin-left: 300px;
+        text-align: center;
+      max-width: 100%;
+      border-radius: 15px;
+      margin-top: 10px;
+    }
+.arrombado {
+    margin-right: 600px;
+    
+
+      border-radius: 15px;
+      margin-top: 10px;
+    }
+    .caption {
+      font-size: 0.9em;
+      color: #666;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    iframe {
+      width: 100%;
+      height: 400px;
+      margin-top: 20px;
+      border: none;
+      border-radius: 6px;
     }
 
     footer {
@@ -79,81 +88,157 @@
       font-size: 0.9em;
       color: #555;
     }
+    nav.menu {
+  background: #fff;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+nav.menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+nav.menu li {
+  margin: 0;
+}
+
+nav.menu a {
+    font-size: large;
+  display: block;
+  padding: 15px 25px;
+  color: #283593;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 20px;
+  margin: 5px;
+  transition: all 0.3s ease;
+}
+
+nav.menu a:hover {
+  background: #283593;
+  color: white;
+}
+
   </style>
 </head>
 <body>
 
   <header>
     <h1>Física Básica</h1>
-    <p>Conceitos fundamentais da física explicados de forma simples</p>
+    <p>Conceitos fundamentais da física explicados de forma simples e ilustrada</p>
   </header>
 
-  <nav>
-    <a href="#oque">O que é Física?</a>
-    <a href="#areas">Áreas</a>
-    <a href="#newton">Leis de Newton</a>
-    <a href="#energia">Energia</a>
-    <a href="#eletricidade">Eletricidade</a>
-  </nav>
+<nav class="menu">
+  <ul>
+    <li><a href="#oque">O que é Física?</a></li>
+    <li><a href="#areas">Áreas</a></li>
+    <li><a href="#newton">Leis de Newton</a></li>
+    <li><a href="#energia">Energia</a></li>
+    <li><a href="#eletricidade">Eletricidade</a></li>
+    <li><a href="#video">Vídeo</a></li>
+  </ul>
+</nav>
+
 
   <div class="container">
 
     <section id="oque">
-      <h2> O que é Física?</h2>
+      <h2>O que é Física?</h2>
       <p>
-        Física é a ciência que estuda os fenômenos da natureza, como movimento, calor, luz, eletricidade, magnetismo e som. 
+        Física é a ciência que estuda os fenômenos da natureza, como movimento, calor, luz, eletricidade, magnetismo e som.
         Ela busca entender as leis que regem o universo, desde partículas subatômicas até galáxias.
       </p>
+       <a href="https://blog.stoodi.com.br/blog/fisica/pendulo-de-newton-como-funciona/">
+      
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQy4DfgGP9WsPSL9l35cK5xmR5GPMRcUzapuw&s" alt="Pêndulo de Newton">
+    </a>
+        <div class="caption">O pêndulo de Newton demonstra conservação de energia e momento.</div>
+
     </section>
 
     <section id="areas">
-      <h2> Principais Áreas da Física</h2>
-      <p>
-        A física é dividida em diversas áreas de estudo:
-        <ul>
-          <li><strong>Mecânica:</strong> estudo dos movimentos e forças.</li>
-          <li><strong>Termodinâmica:</strong> estuda o calor e a temperatura.</li>
-          <li><strong>Óptica:</strong> fenômenos relacionados à luz.</li>
-          <li><strong>Ondulatória:</strong> estudo das ondas (som, luz, etc.).</li>
-          <li><strong>Eletromagnetismo:</strong> eletricidade e magnetismo.</li>
-          <li><strong>Física Moderna:</strong> inclui relatividade e física quântica.</li>
-        </ul>
-      </p>
+      <h2>Principais Áreas da Física</h2>
+      <ul>
+        <li><strong>Mecânica:</strong> estudo dos movimentos e forças.</li>
+        <li><strong>Termodinâmica:</strong> estuda o calor, a temperatura e suas transformações.</li>
+        <li><strong>Óptica:</strong> analisa o comportamento da luz e seus fenômenos (reflexão, refração, dispersão).</li>
+        <li><strong>Ondulatória:</strong> estudo das ondas mecânicas e eletromagnéticas.</li>
+        <li><strong>Eletromagnetismo:</strong> campo que trata da eletricidade e magnetismo.</li>
+        <li><strong>Física Moderna:</strong> inclui a teoria da relatividade, física quântica e partículas subatômicas.</li>
+      </ul>
+      <div class="arrombado">
+         <a href="https://conexaociencia.com.br/teoria-quantica-e-terreno-fertil-para-a-ciencia-inovar/">
+       
+         <img src="https://i0.wp.com/conexaociencia.com.br/wp-content/uploads/2025/06/CAPA-FISICAQUANTICCA-COPY_11zon.png?fit=1200%2C900&ssl=1" alt="Representação de conceitos físicos">
+         </a>
+        </div>
+        <div class="caption">Representação artística de várias áreas da física.</div>
     </section>
 
     <section id="newton">
-      <h2> Leis de Newton</h2>
-      <p>
-        As três leis de Newton descrevem o movimento dos corpos:
-        <ol>
-          <li><strong>1ª Lei (Inércia):</strong> Um corpo tende a manter seu estado de movimento a menos que uma força atue sobre ele.</li>
-          <li><strong>2ª Lei (F = m . a):</strong> A força é igual à massa vezes a aceleração.</li>
-          <li><strong>3ª Lei (Ação e Reação):</strong> Toda ação tem uma reação de mesma intensidade, mas em sentido oposto.</li>
-        </ol>
-      </p>
+      <h2>Leis de Newton</h2>
+      <p>As três leis de Newton descrevem como os corpos se movimentam e interagem:</p>
+      <ol>
+        <li><strong>1ª Lei (Inércia):</strong> Um corpo tende a permanecer em repouso ou movimento retilíneo uniforme se não houver força resultante agindo sobre ele.</li>
+        <li><strong>2ª Lei (F = m . a):</strong> A força que age sobre um corpo é proporcional ao produto da sua massa pela aceleração.</li>
+        <li><strong>3ª Lei (Ação e Reação):</strong> Para toda ação, há uma reação de mesma intensidade e direção, porém em sentido oposto.</li>
+      </ol>
+      <div class="arrombado">
+        <a href="https://blogdoenem.com.br/tres-leis-de-newton-fisica-enem/">
+      <img src="https://blogdoenem.com.br/wp-content/uploads/2015/09/as-tr%C3%AAs-leis-de-newton-destacada.jpg" alt="Isaac Newton e suas leis">
+        </a>
+      </div>
+      <div class="caption"> Isaac Newton formulou as leis fundamentais da mecânica clássica.</div>
     </section>
 
     <section id="energia">
-      <h2> Energia</h2>
+      <h2>Energia</h2>
       <p>
-        Energia é a capacidade de realizar trabalho. Existem vários tipos, como:
-        cinética, potencial, térmica, elétrica, química e nuclear. A energia nunca é criada nem destruída, apenas transformada (Lei da Conservação da Energia).
+        Energia é a capacidade de realizar trabalho. Pode assumir diversas formas:
       </p>
+      <ul>
+        <li><strong>Cinética:</strong> associada ao movimento.</li>
+        <li><strong>Potencial:</strong> energia armazenada devido à posição.</li>
+        <li><strong>Térmica:</strong> relacionada à agitação das partículas.</li>
+        <li><strong>Elétrica:</strong> transporte de elétrons em um condutor.</li>
+        <li><strong>Química:</strong> liberada ou absorvida em reações.</li>
+        <li><strong>Nuclear:</strong> energia das reações no núcleo atômico.</li>
+      </ul>
+      <p><strong>Lei da Conservação da Energia:</strong> A energia não é criada nem destruída, apenas transformada.</p>
+      <div class="arrombado">
+      <img src="https://cdn.pixabay.com/photo/2019/01/17/08/42/energy-3936156_960_720.jpg" alt="Formas de energia">
+      </div>
+      <div class="caption">Exemplos de fontes e transformações de energia.</div>
     </section>
 
     <section id="eletricidade">
-      <h2> Eletricidade</h2>
+      <h2>Eletricidade</h2>
       <p>
-        Eletricidade é o movimento de cargas elétricas (geralmente elétrons). Corrente elétrica, tensão, resistência e potência são conceitos-chave. 
-        A eletricidade é essencial na vida moderna, alimentando desde lâmpadas até computadores.
+        Eletricidade é o fluxo de cargas elétricas, geralmente elétrons, através de um condutor.
+        Os principais conceitos são:
       </p>
+      <ul>
+        <li><strong>Corrente Elétrica:</strong> fluxo de cargas elétricas.</li>
+        <li><strong>Tensão (Voltagem):</strong> diferença de potencial elétrico.</li>
+        <li><strong>Resistência:</strong> oposição à passagem da corrente.</li>
+        <li><strong>Potência Elétrica:</strong> taxa de consumo de energia (P = V . I).</li>
+      </ul>
+      
+      <img src="https://cdn.pixabay.com/photo/2017/01/31/13/14/light-bulb-2029320_960_720.png" alt="Conceitos de eletricidade">
+      <div class="caption">A eletricidade está presente em quase tudo na vida moderna.</div>
+    </section>
+
+    <section id="video">
+      <h2>Vídeo: O que é Física?</h2>
+      <p>Veja este vídeo introdutório que explica o papel da física no nosso cotidiano:</p>
+      <iframe src="https://www.youtube.com/embed/44OZc1ZfLtw" allowfullscreen></iframe>
     </section>
 
   </div>
 
   <footer>
-    &copy; 2025 • Site de Física • Criado por João Filho
-  </footer>
-
-</body>
-</html>
+    &copy; 2025 • Site de Física
